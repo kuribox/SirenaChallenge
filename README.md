@@ -2,6 +2,7 @@
 
 # Prerequisitos 
 node.js >= 10
+
 MongoDb
 
 # Intalacion
@@ -9,20 +10,20 @@ MongoDb
 Base de datos
 -------------
 
-```mongorestore --host [host] --port [host] ./Ganymede/db/dump/```
+```# mongorestore --host [host] --port [host] ./Ganymede/db/dump/```
 
 
 Dependencias
 -------------
 
 ```
-cd Ganymede
-npm install
+# cd Ganymede
+# npm install
 ```
 
 ```
-cd Themito
-npm install
+# cd Themito
+# npm install
 ```
 
 # Configurar Ganymede 
