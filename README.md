@@ -67,6 +67,17 @@ Editar /Themisto/config/config.js
 
 # API Ganymede
 
+* GET /api/product/search-order/{searchOrderId}
+  Devuelve la orden de busqueda pedida.
+  (Para usarlo en el postman, reemplazar {searchOrderId} por el id de orden)
+
+* GET /api/product/search-order/List
+  Devuelve la una lista con todas las ordenes.
+
+* GET /api/product/category/{categoryId}
+  Devuelve todos los productos que esten el la categoria categoryId.
+  (Para usarlo en el postman, reemplazar {searchOrderId} por el id de categoria)
+
 * POST /api/product/search
 Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de productos sobre el provider
 
@@ -88,19 +99,8 @@ Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de
   Username: themisto@piojon.33mail.com  -  Password: themisto
   ```
 
- # Envio del ejemplo 
+ # Puebas
   Importar el archivo Postman.json al postman, y utilizar los metodos existentes
-
-* GET /api/product/search-order/{searchOrderId}
-  Devuelve la orden de busqueda pedida.
-  (Para usarlo en el postman, reemplazar {searchOrderId} por el id de orden)
-
-* GET /api/product/search-order/List
-  Devuelve la una lista con todas las ordenes.
-
-* GET /api/product/category/{categoryId}
-  Devuelve todos los productos que esten el la categoria categoryId.
-  (Para usarlo en el postman, reemplazar {searchOrderId} por el id de categoria)
 
 # API Themisto
 
