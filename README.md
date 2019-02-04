@@ -1,17 +1,31 @@
-##Ejercio de BackEnd para Sirena
+# Ejercio de BackEnd para Sirena
 
-#Prerequisitos 
+# Prerequisitos 
 node.js >= 10
 MongoDb
 
-#Intalacion
+# Intalacion
 
 Base de datos
 -------------
 
 ```mongorestore --host [host] --port [host] ./Ganymede/db/dump/```
 
-#Configurar Ganymede 
+
+Dependencias
+-------------
+
+```
+cd Ganymede
+npm install
+```
+
+```
+cd Themito
+npm install
+```
+
+# Configurar Ganymede 
 
 Editar /Ganymade/config/config.js
 ```
@@ -27,7 +41,7 @@ Editar /Ganymade/config/config.js
   }
 ```
 
-#Configurar Themisto 
+# Configurar Themisto 
 
 Editar /Themisto/config/config.js
 ```
@@ -84,7 +98,7 @@ Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de
 * GET /api/product/category/{categoryId}
   Devuelve todos los productos que esten el la categoria categoryId.
 
-#API Themisto
+# API Themisto
 
 * POST /api/testCallback
   Ruta creada para poder testear el callbackUrl, el cual imprime la informacion que llegue en el post request.

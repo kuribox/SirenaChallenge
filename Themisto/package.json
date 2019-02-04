@@ -1,0 +1,33 @@
+{
+  "name": "themisto",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "private": false,
+  "engines": {
+    "node": ">=4.6.0",
+    "npm": ">=2.15.9",
+    "yarn": ">=0.17.9"
+  },
+  "scripts": {
+    "start": "nodejs src/index.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "koa": "^2.7.0",
+    "koa-body": "^4.0.7",
+    "koa-router": "^7.4.0",
+    "node-fetch": "^2.3.0",
+    "puppeteer": "^1.12.1"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "config": {
+    "ghooks": {
+      "pre-commit": "yarn lint"
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
