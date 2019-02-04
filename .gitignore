@@ -1,0 +1,6 @@
+/.tmp
+/lib
+/node_modules/
+/Ganymede/node_modules/
+/Themisto/node_modules/
+npm-debug.log
