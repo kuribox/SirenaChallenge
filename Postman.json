@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "925eb097-9484-4d0b-9a7a-b2e451e258a0",
+		"name": "all",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/product/search-order/list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/product/search-order/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"product",
+						"search-order",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"searchQuery\":\"tv\",\"provider\":\"easy\",\"options\":{\"user\":\"themisto@piojon.33mail.com\",\"password\": \"themisto\"},\"callbackUrl\":\"http://localhost:3003/api/testCallback\"}"
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/product/search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"product",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/search-order/{orderId}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/product/search-order/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"product",
+						"search-order",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/product/category/{productId}",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/product/search-order/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"product",
+						"search-order",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
