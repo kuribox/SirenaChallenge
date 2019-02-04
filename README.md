@@ -87,18 +87,9 @@ Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de
   ```
   Username: themisto@piojon.33mail.com  -  Password: themisto
   ```
-<<<<<<< HEAD
 
  - Envio del ejemplo 
   Importar el archivo Postman.json al postman, y utilizar los metodos existentes
-=======
-
-
- - Envio del ejemplo en Curl
-  ```
-  curl -X POST -H 'Content-Type: application/json' -d '{"searchQuery":"tv","provider":"easy","options":{"user":"themisto@piojon.33mail.com","password": "themisto"},"callbackUrl":"http://localhost:3003/api/testCallback"}' http://localhost:3002/api/product/search
-  ```
->>>>>>> 32a256dd2be5ed811774f136c0dd96f50be05dc9
 
 * GET /api/product/search-order/{searchOrderId}
   Devuelve la orden de busqueda pedida.
