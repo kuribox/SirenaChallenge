@@ -2,6 +2,7 @@
 
 # Prerequisitos 
 node.js >= 10
+
 MongoDb
 
 # Intalacion
@@ -9,20 +10,20 @@ MongoDb
 Base de datos
 -------------
 
-```mongorestore --host [host] --port [host] ./Ganymede/db/dump/```
+```# mongorestore --host [host] --port [host] ./Ganymede/db/dump/```
 
 
 Dependencias
 -------------
 
 ```
-cd Ganymede
-npm install
+# cd Ganymede
+# npm install
 ```
 
 ```
-cd Themito
-npm install
+# cd Themito
+# npm install
 ```
 
 # Configurar Ganymede 
@@ -64,7 +65,7 @@ Editar /Themisto/config/config.js
 * Ejecutar Themisto
 ```node Themisto/src/index.js```
 
-#API Ganymede
+# API Ganymede
 
 * POST /api/product/search
 Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de productos sobre el provider
@@ -83,20 +84,23 @@ Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de
 ```
  - Se tiene que mandar a '/api/product/search' de Ganymede
  - Se precreo en Ebay el siguiente usuario y password 
-  ```Username: themisto@piojon.33mail.com  -  Password: themisto```
+  ```
+  Username: themisto@piojon.33mail.com  -  Password: themisto
+  ```
 
-
- - Envio del ejemplo en Curl
-  ```curl -X POST -H 'Content-Type: application/json' -d '{"searchQuery":"tv","provider":"easy","options":{"user":"themisto@piojon.33mail.com","password": "themisto"},"callbackUrl":"http://localhost:3003/api/testCallback"}' http://localhost:3002/api/product/search```
+ - Envio del ejemplo 
+  Importar el archivo Postman.json al postman, y utilizar los metodos existentes
 
 * GET /api/product/search-order/{searchOrderId}
   Devuelve la orden de busqueda pedida.
+  (Para usarlo en el postman, reemplazar {searchOrderId} por el id de orden)
 
 * GET /api/product/search-order/List
   Devuelve la una lista con todas las ordenes.
 
 * GET /api/product/category/{categoryId}
   Devuelve todos los productos que esten el la categoria categoryId.
+  (Para usarlo en el postman, reemplazar {searchOrderId} por el id de categoria)
 
 # API Themisto
 

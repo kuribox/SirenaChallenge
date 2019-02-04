@@ -4,9 +4,11 @@ const fetch = require("node-fetch");
 
 
 module.exports = async function ProductSearch (ctx, next) {
-  console.log("Recived new Order", ctx.request.body);
-  if (ctx.request.body && ctx.request.body.searchQuery && ctx.request.body.provider) {
-    const orderId = await db.searchOrderModel.LoadOrder("recived", ctx.request.body, []); // Carga la SearchOrder y obtiene su id
+  console.warn(ctx.request.body);
+  const body = JSON.parse(ctx.request.body);
+  console.log("Recived new Order", body);
+  if (body && body.searchQuery && body.provider) {
+    const orderId = await db.searchOrderModel.LoadOrder("recived", body, []); // Carga la SearchOrder y obtiene su id
     if (orderId) {
       ctx.body = {orderId: orderId}; // responde el id de la orden
       console.log(`New Order [${orderId}]`);
@@ -16,7 +18,7 @@ module.exports = async function ProductSearch (ctx, next) {
         method: 'post',
         body: JSON.stringify({
           id: orderId,
-          order: ctx.request.body
+          order: body
         })
       }).then(function(response) {
         if (response.status === 200) {
