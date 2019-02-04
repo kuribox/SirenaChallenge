@@ -70,7 +70,7 @@ Editar /Themisto/config/config.js
 * POST /api/product/search
 Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de productos sobre el provider
 
-- Paquete Ejemplo
+# Paquete Ejemplo
 ```
 {
   searchQuery: 'tv', # String de busqueda
@@ -88,7 +88,7 @@ Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de
   Username: themisto@piojon.33mail.com  -  Password: themisto
   ```
 
- - Envio del ejemplo 
+ # Envio del ejemplo 
   Importar el archivo Postman.json al postman, y utilizar los metodos existentes
 
 * GET /api/product/search-order/{searchOrderId}
