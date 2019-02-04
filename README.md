@@ -65,7 +65,7 @@ Editar /Themisto/config/config.js
 * Ejecutar Themisto
 ```node Themisto/src/index.js```
 
-#API Ganymede
+# API Ganymede
 
 * POST /api/product/search
 Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de productos sobre el provider
@@ -84,11 +84,15 @@ Se le envia un paquete como en el del ejemplo, para inciar una nueva busqueda de
 ```
  - Se tiene que mandar a '/api/product/search' de Ganymede
  - Se precreo en Ebay el siguiente usuario y password 
-  ```Username: themisto@piojon.33mail.com  -  Password: themisto```
+  ```
+  Username: themisto@piojon.33mail.com  -  Password: themisto
+  ```
 
 
  - Envio del ejemplo en Curl
-  ```curl -X POST -H 'Content-Type: application/json' -d '{"searchQuery":"tv","provider":"easy","options":{"user":"themisto@piojon.33mail.com","password": "themisto"},"callbackUrl":"http://localhost:3003/api/testCallback"}' http://localhost:3002/api/product/search```
+  ```
+  curl -X POST -H 'Content-Type: application/json' -d '{"searchQuery":"tv","provider":"easy","options":{"user":"themisto@piojon.33mail.com","password": "themisto"},"callbackUrl":"http://localhost:3003/api/testCallback"}' http://localhost:3002/api/product/search
+  ```
 
 * GET /api/product/search-order/{searchOrderId}
   Devuelve la orden de busqueda pedida.
